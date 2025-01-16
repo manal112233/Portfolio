@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 
 const Projects = ({ id }) => {
   const projects = [
-    { name: 'Project 1', description: 'A cool project using React', link: '#' },
-    { name: 'Project 2', description: 'A portfolio website', link: '#' },
-    { name: 'Project 3', description: 'A blog platform', link: '#' },
+    { name: 'Employee management system', description: 'Built a web app using EJS, Node.js, Express.js, and SQL to manage employee records with CRUD functionality and responsive design.', link: 'https://github.com/manal112233/Employee-Management-System' },
+    { name: 'Weather Application', description: ' Created a responsive weather app using React, Material UI, and Tailwind CSS to display real-time weather data with a clean and interactive design.', link: 'https://github.com/manal112233/Weather-App' },
+    { name: 'Ladder 7', description: 'Contributed to the frontend development using React and Tailwind CSS, focusing on creating responsive and user-friendly interfaces.', link: 'https://github.com/ladder7-dev/Ladder7' },
   ];
 
   // Animation Variants
