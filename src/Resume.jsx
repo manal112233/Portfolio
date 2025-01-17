@@ -255,7 +255,7 @@ const Resume = ({ id }) => {
         <h2 className={`text-2xl font-bold mb-4 text-center ${headingColor}`}>Resume</h2>
         <div className="space-y-4  ">
           <button
-            className={`w-full text-left  md:px-4 md:py-2  rounded-lg ${
+            className={`w-full text-left  px-4 py-2  rounded-lg ${
               activeSection === 'about' ? `${buttonBgColor} ${buttonTextColor}` : 'bg-gray-300'
             }`}
             onClick={() => setActiveSection('about')}
