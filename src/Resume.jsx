@@ -251,11 +251,11 @@ const Resume = ({ id }) => {
   return (
     <div className="flex min-h-screen">
       {/* Left Section */}
-      <div id={id} className="w-1/4   bg-gradient-to-b from-gray-900 to-black pt-6 p-6">
+      <div id={id} className="md:w-1/4 w-[180px] bg-gradient-to-b from-gray-900 to-black pt-6 p-6">
         <h2 className={`text-2xl font-bold mb-4 text-center ${headingColor}`}>Resume</h2>
-        <div className="space-y-4">
+        <div className="space-y-4  ">
           <button
-            className={`w-full text-left px-4 py-2 rounded-lg ${
+            className={`w-full text-left  md:px-4 md:py-2  rounded-lg ${
               activeSection === 'about' ? `${buttonBgColor} ${buttonTextColor}` : 'bg-gray-300'
             }`}
             onClick={() => setActiveSection('about')}
