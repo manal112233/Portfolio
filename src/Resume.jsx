@@ -54,6 +54,13 @@ const Resume = ({ id }) => {
       description:
         "Worked as a Subject Matter Expert in Mathematics at Chegg India while exploring web development.",
     },
+
+    {
+      title: "Internship-MERN stack",
+      duration: "oct 2024 - Present",
+      description:
+        "Exploring web development and building applications with React as part of the MERN stack.",
+    },
   ];
 
   // Adjusted colors to match the hero section (assumed colors for example)
@@ -244,7 +251,7 @@ const Resume = ({ id }) => {
   return (
     <div className="flex min-h-screen">
       {/* Left Section */}
-      <div id={id} className="w-1/4 bg-gradient-to-b from-gray-900 to-black pt-6 p-6">
+      <div id={id} className="w-1/4   bg-gradient-to-b from-gray-900 to-black pt-6 p-6">
         <h2 className={`text-2xl font-bold mb-4 text-center ${headingColor}`}>Resume</h2>
         <div className="space-y-4">
           <button
@@ -256,7 +263,7 @@ const Resume = ({ id }) => {
             About Me
           </button>
           <button
-            className={`w-full text-left px-4 py-2 rounded-lg ${
+            className={`w-full  text-left px-4 py-2 rounded-lg ${
               activeSection === 'experience' ? `${buttonBgColor} ${buttonTextColor}` : 'bg-gray-300'
             }`}
             onClick={() => setActiveSection('experience')}
