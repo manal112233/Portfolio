@@ -28,8 +28,9 @@ const Hero = ({ id }) => {
   transition={{ duration: 1 }}
 >
   {/* Heading */}
+  
   <motion.h1
-    className="text-4xl md:text-6xl font-extrabold text-blue-400"
+    className="text-4xl md:text-6xl font-extrabold text-purple-500"
     initial={{ scale: 0.8, opacity: 0 }}
     animate={{ scale: 1, opacity: 1 }}
     transition={{ duration: 1, type: 'spring' }}
@@ -106,16 +107,31 @@ const Hero = ({ id }) => {
 </motion.div>
 
   {/* Button */}
-  <motion.button
-    className="mt-5 px-4 md:px-6 py-2 md:py-3 bg-blue-500 text-white rounded-full hover:bg-blue-600"
-    whileHover={{ scale: 1.1, backgroundColor: "#2563eb" }}
-    whileTap={{ scale: 0.9, backgroundColor: "#1e40af" }}
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    transition={{ duration: 1, delay: 0.7 }}
-  >
-    More about me
-  </motion.button>
+{/* Button */}
+{/* Button */}
+<motion.a
+  href="https://www.linkedin.com/in/nafila-vt-b96b2912a/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-5 px-4 md:px-6 py-2 md:py-3  bg-gradient-to-r from-purple-500 to-indigo-600 text-white rounded-full text-center"
+  whileHover={{
+    y: [0, -20, 0, -10, 0], // Bouncing effect
+    // Color transition during bounce
+    transition: {
+      y: { duration: 0.6, ease: "easeOut" }, // Bounce motion duration
+      backgroundColor: { duration: 0.6 }, // Color transition duration
+    },
+  }}
+  whileTap={{ scale: 0.9, backgroundColor: "#1e40af" }}
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ duration: 1, delay: 0.7 }}
+>
+  More about me
+</motion.a>
+
+
+
 </motion.div>
 
 

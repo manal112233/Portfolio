@@ -18,12 +18,12 @@ const Navbar = () => {
   return (
     <div className="bg-black">
       <div className="flex items-center justify-between px-4 py-2">
-        <a href="#home" className="text-xl md:text-2xl font-bold text-blue-500">
+        <a href="#home" className="text-xl md:text-2xl font-bold text-purple-500">
           Portfolio
         </a>
 
         {/* Navigation Menu for Desktop */}
-        <nav className="hidden md:flex gap-5 text-blue-500">
+        <nav className="hidden md:flex gap-5 text-purple-500">
           <button onClick={() => scrollToSection('home')}>Home</button>
           {/* <button onClick={() => scrollToSection('about')}>About</button> */}
           {/* <button onClick={() => scrollToSection('skills')}>Skills</button> */}
@@ -33,7 +33,7 @@ const Navbar = () => {
         </nav>
 
         {/* Hamburger Menu for Mobile */}
-        <button onClick={toggleMenu} className="block md:hidden text-blue-500">
+        <button onClick={toggleMenu} className="block md:hidden text-purple-500">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"
@@ -48,7 +48,7 @@ const Navbar = () => {
 
       {/* Mobile Navigation Menu */}
       {isMenuOpen && (
-        <nav className="md:hidden bg-black text-blue-500 px-4 py-2 flex flex-col gap-3">
+        <nav className="md:hidden bg-black text-purple-500 px-4 py-2 flex flex-col gap-3">
           <button onClick={() => scrollToSection('home')}>Home</button>
           <button onClick={() => scrollToSection('about')}>About</button>
           <button onClick={() => scrollToSection('skills')}>Skills</button>
