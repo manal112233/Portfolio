@@ -221,7 +221,7 @@ const Resume = ({ id }) => {
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     exit={{ opacity: 0 }}
-    className="p-6 bg-gradient-to-b from-gray-800 to-gray-900 min-h-screen flex flex-col"
+    className="p-6  bg-gradient-to-b from-gray-900 to-black min-h-screen flex flex-col"
   >
     <h2 className="text-3xl font-bold mb-8 text-white">Education</h2>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -230,7 +230,7 @@ const Resume = ({ id }) => {
           key={index}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="relative p-6 pt-8 bg-gradient-to-b from-gray-800 to-gray-900 hover:from-purple-600 hover:to-purple-800 text-white rounded-lg shadow-lg transform transition-transform"
+          className="relative p-6 pt-8 bg-gradient-to-b from-gray-900 to-black hover:from-purple-600 hover:to-purple-800 text-white rounded-lg shadow-lg transform transition-transform"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: index * 0.2 }}
