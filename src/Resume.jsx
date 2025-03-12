@@ -41,25 +41,29 @@ const Resume = ({ id }) => {
       duration: "Oct 2016 - March 2017",
       description:
         "Managed administrative tasks and ensured smooth operations in office environments.",
+        company:"Malabar Polytechnic College ,Maravattom",
     },
     {
       title: "KSEB Trainee",
       duration: "April 2017 - Oct 2017",
       description:
         "Received hands-on training with Kerala State Electricity Board (KSEB), focusing on practical skills and technical knowledge.",
+        company:"Kerala State Elaectricity Board ,Edarikode",
     },
     {
       title: "Subject Matter Expert (SME)",
       duration: "Aug 2020 - Present",
       description:
         "Worked as a Subject Matter Expert in Mathematics at Chegg India while exploring web development.",
+        company:"Chegg India Private Limited",
     },
 
     {
       title: "Internship-MERN stack",
-      duration: "oct 2024 - Present",
+      duration: "oct 2024 - jan 2025",
       description:
         "Exploring web development and building applications with React as part of the MERN stack.",
+        company:"Neyndra Global Solutions",
     },
   ];
 
@@ -171,6 +175,7 @@ const Resume = ({ id }) => {
             transition={{ duration: 0.5 }}
           >
             <h3 className="text-2xl font-semibold mb-2">{exp.title}</h3>
+            <p className="text-lg italic mb-4">{exp.company}</p>
             <p className="text-lg italic mb-4">{exp.duration}</p>
             <p className="text-center">{exp.description}</p>
           </motion.div>

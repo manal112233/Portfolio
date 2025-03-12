@@ -19,7 +19,8 @@ const Projects = ({ id }) => {
       name: "Ladder 7",
       description:
         "Contributed to the frontend development using React and Tailwind CSS, focusing on creating responsive and user-friendly interfaces.",
-      link: "https://github.com/ladder7-dev/Ladder7",
+      link: "https://ladder7.in/",
+      
     },
     {
       name: "Wunderstay",
