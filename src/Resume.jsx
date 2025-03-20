@@ -152,48 +152,49 @@ const Resume = ({ id }) => {
         );
       case 'experience':
         return (
-    <motion.div
-      key="experience"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      className="p-6 bg-gradient-to-b from-gray-900 to-black min-h-screen flex flex-col "
-    >
-      <h2 className="text-3xl font-bold mb-8 text-white">Experience</h2>
-      <div className="relative w-full max-w-xl h-64">
-        {experiences.map((exp, index) => (
           <motion.div
-            key={index}
-            className={`absolute top-0 left-0 w-full h-full  bg-gradient-to-r from-purple-500 to-indigo-600 text-white rounded-lg shadow-lg p-6 flex flex-col items-center justify-center transform transition-transform ${
-              index === current ? "z-10 scale-100" : "z-0 scale-90 opacity-50"
-            }`}
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{
-              opacity: index === current ? 1 : 0.5,
-              scale: index === current ? 1 : 0.9,
-            }}
-            transition={{ duration: 0.5 }}
-          >
-            <h3 className="text-2xl font-semibold mb-2">{exp.title}</h3>
-            <p className="text-lg italic mb-4">{exp.company}</p>
-            <p className="text-lg italic mb-4">{exp.duration}</p>
-            <p className="text-center">{exp.description}</p>
-          </motion.div>
-        ))}
-        <button
-          onClick={prevSlide}
-          className="absolute left-2 top-1/2 transform -translate-y-1/2 text-white bg-gray-800 hover:bg-gray-600 p-2 rounded-full z-20"
+          key="experience"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="p-6 bg-gradient-to-b from-gray-900 to-black min-h-screen flex flex-col items-center overflow-hidden"
         >
-          &#8249;
-        </button>
-        <button
-          onClick={nextSlide}
-          className="absolute right-2 top-1/2 transform -translate-y-1/2 text-white bg-gray-800 hover:bg-gray-600 p-2 rounded-full z-20"
-        >
-          &#8250;
-        </button>
-      </div>
-    </motion.div>
+          <h2 className="text-3xl font-bold mb-8 text-white text-center">Experience</h2>
+          <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-xl h-80 overflow-hidden">
+            {experiences.map((exp, index) => (
+              <motion.div
+                key={index}
+                className={`absolute top-0 left-0 w-full h-full bg-gradient-to-r from-purple-500 to-indigo-600 text-white rounded-lg shadow-lg p-4 sm:p-6 flex flex-col items-center justify-center transform transition-transform ${
+                  index === current ? "z-10 scale-100" : "z-0 scale-90 opacity-50"
+                }`}
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{
+                  opacity: index === current ? 1 : 0.5,
+                  scale: index === current ? 1 : 0.9,
+                }}
+                transition={{ duration: 0.5 }}
+              >
+                <h3 className="text-xl sm:text-2xl font-semibold mb-2 text-center">{exp.title}</h3>
+                <p className="text-lg italic mb-2 text-center">{exp.company}</p>
+                <p className="text-lg italic mb-2 text-center">{exp.duration}</p>
+                <p className="text-sm sm:text-base text-center break-words">{exp.description}</p>
+              </motion.div>
+            ))}
+            <button
+              onClick={prevSlide}
+              className="absolute left-2 top-1/2 transform -translate-y-1/2 text-white bg-gray-800 hover:bg-gray-600 p-2 rounded-full z-20"
+            >
+              &#8249;
+            </button>
+            <button
+              onClick={nextSlide}
+              className="absolute right-2 top-1/2 transform -translate-y-1/2 text-white bg-gray-800 hover:bg-gray-600 p-2 rounded-full z-20"
+            >
+              &#8250;
+            </button>
+          </div>
+        </motion.div>
+        
         );
       case 'skills':
         return (
